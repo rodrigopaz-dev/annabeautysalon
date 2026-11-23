@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Anna's | Beauty Salon</title>
+      <link rel="stylesheet" href="resources/css/style.css">
+      <link rel="stylesheet" href="resources/css/hero-section.css">
+   </head>
+   <body>
+
+      <!-- Navigation -->
+      <header>
+         <nav class="navbar">
+               <div class="logo">Anna's Salon</div>
+               <ul class="nav-links">
+                  <li><a href="#home">home</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+               <button class="btn-book open-modal">Book Now</button>
+               <div class="menu-toggle" id="mobile-menu">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </div>
+         </nav>
+      </header>
+
+      <!-- Hero Section (home) -->
+      <section id="home" class="hero">
+         <!-- <div class="hero-content"> -->
+         <!-- Decorative elements -->
+         <div class="decorative-circle circle-1"></div>
+         <div class="decorative-circle circle-2"></div>
+
+         <!-- =========================
+               FLOATING PHOTOS
+         ========================= -->
+         <div class="image-wrapper image-1">
+            <img src="resources/images/image-1.jpg" alt="Hair coloring at AnnA Beauty Salon" class="floating-image">
+            <div class="image-label">Hair Coloring</div>
+         </div>
+         <div class="image-wrapper image-2">
+            <img src="resources/images/image-2.jpg" alt="Hair highlights at AnnA Beauty Salon" class="floating-image">
+            <div class="image-label">Highlights</div>
+         </div>
+         <div class="image-wrapper image-3">
+            <img src="resources/images/image-3.jpg" alt="Haircut at AnnA Beauty Salon" class="floating-image">
+            <div class="image-label">Haircut</div>
+         </div>
+         <div class="image-wrapper image-4">
+            <img src="resources/images/image-4.jpg" alt="Hair styling at AnnA Beauty Salon" class="floating-image">
+            <div class="image-label">Hair Styling</div>
+         </div>
+         <div class="image-wrapper image-5">
+            <img src="resources/images/image-5.jpg" alt="Men's haircut at AnnA Beauty Salon" class="floating-image">
+         </div>
+         <div class="image-wrapper image-6">
+            <img src="resources/images/image-6.jpg" alt="Boys haircut at AnnA Beauty Salon" class="floating-image">
+         </div>
+
+         <!-- =========================
+               CENTER CONTENT
+         ========================= -->
+         <div class="hero-content">
+            <div class="eyebrow">AnnA Beauty Salon · San Francisco</div>
+            <div class="eyebrow-mobile">AnnA Beauty Salon<br>San Francisco</div>
+            <h1>Feel Beautiful.<br><span>Feel Confident.</span></h1>
+            <p>Professional hair services designed to enhance your natural beauty and create a look you'll love.</p>
+            <a href="#booking" class="hero-button open-modal">BOOK YOUR APPOINTMENT</a>
+         </div>
+         <!-- </div> -->
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services">
+         <div class="services-content">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                  <div class="service-card">
+                     <div class="service-icon">🎨</div>
+                     <h3>Hair Coloring</h3>
+                     <p>Vibrant, long-lasting color tailored to enhance your unique style.</p>
+                  </div>
+                  <div class="service-card">
+                     <div class="service-icon">✂️</div>
+                     <h3>Hairdressing</h3>
+                     <p>Professional styling that brings out your best look for any occasion.</p>
+                  </div>
+                  <div class="service-card">
+                     <div class="service-icon">💈</div>
+                     <h3>Haircuts for men and boys</h3>
+                     <p>Clean, modern cuts designed for style, comfort and confidence.</p>
+                  </div>
+                  <div class="service-card">
+                     <div class="service-icon">✨</div>
+                     <h3>Highlights</h3>
+                     <p>Natural-looking highlights that add depth, shine and dimension to your hair.</p>
+                  </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section id="testimonials" class="testimonials">
+         <h2>What our clients say</h2>
+         <div class="testimonial-slider">
+               <div class="testimonial-item active">
+                  <p>"The best beauty salon in the city. The service is impeccable, and my hair turned out exactly the way I wanted it."</p> 
+                  <h4>- Elena R. | ⭐⭐⭐⭐⭐</h4>
+               </div>
+         </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+         <div class="contact-content">
+            <h2>Contact and Hours</h2>
+            <div class="contact-container">
+                  <div class="contact-info">
+                     <h3>Visit us</h3>
+                     <p>📍 123 Beauty St, San Francisco, CA 94123</p>
+                     <p>📞 +1 (123) 456-7890</p>
+                     <h3>Hours</h3>
+                     <p>Monday to Saturday: 9:00 AM - 5:00 PM</p>
+                     <!-- <p>Closed at 5:00 PM on Saturday</p> -->
+                     <p>Closed Sundays</p>
+                  </div>
+                  <form class="contact-form" id="main-contact-form">
+                     <input type="text" placeholder="Your Name" required>
+                     <input type="email" placeholder="Your email" required>
+                     <textarea placeholder="Message or inquiry" rows="4" required></textarea>
+                     <button type="submit" class="btn-submit">Send Message</button>
+                  </form>
+            </div>
+         </div>
+      </section>
+
+      <!-- Modal window for appointment -->
+      <div class="modal" id="booking-modal">
+         <div class="modal-content">
+               <span class="close-modal">&times;</span>
+               <h2>Schedule an Appointment</h2>
+               <form id="booking-form">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" required>
+                  
+                  <label for="service-select">Service required</label>
+                  <select id="service-select">
+                     <option value="hair-coloring">Hair Coloring</option>
+                     <option value="hairdressing">Hairdressing</option>
+                     <option value="haircut-man-boy">Haircuts for men and boys</option>
+                     <option value="highlights">Highlights</option>
+                  </select>
+
+                  <label for="date">Date</label>
+                  <input type="date" id="date" required>
+
+                  <button type="submit" class="btn-submit">Confirm and Send</button>
+               </form>
+         </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+         <p>&copy; 2026 Anna's Salon. All rights reserved.</p>
+      </footer>
+
+      <script src="resources/js/script.js"></script>
+   </body>
+</html>
